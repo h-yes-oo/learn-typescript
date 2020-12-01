@@ -1,0 +1,7 @@
+{
+    "compilerOptions": {
+        "allowJs": true, //자바스크립트 파일을 허용할 것인지
+        "checkJs": true, //ts-check와 같은 역할
+        "noImplicitAny": true //하나의 변수에 대해 적어도 any라는 타입은 꼭 적어야하는지
+    }
+}
