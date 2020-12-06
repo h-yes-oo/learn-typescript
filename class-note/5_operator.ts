@@ -19,4 +19,37 @@ function log(value: string | number | boolean) {
 
 log('hello');
 log(100);
-log(false);
+//log(false);
+
+interface Dev {
+    name: string;
+    skill: string;
+}
+
+interface Pers {
+    name: string;
+    age: number;
+}
+
+function askSomeone(someone: Dev | Pers) {
+    console.log(someone.name);
+    //console.log(someone.skill);
+    //console.log(someone.age);
+}
+
+var you : Dev = {
+    name: 'haha',
+    skill: 'cheers'
+}
+
+askSomeone(you);
+
+function ask(someone: Dev & Pers) {
+    console.log(someone.name);
+    console.log(someone.age);
+    console.log(someone.skill);
+}
+
+ask({name:'dev',skill:'python',age:40});
+askSomeone({name:'dev',skill:'web'});
+askSomeone({name:'person',age:19});
