@@ -14,13 +14,13 @@ function getUser(user : User) {
     console.log(seho);
 }
 
-const capt = {
+const captain = {
     age: 40,
-    name: 'capt'
+    name: 'captain'
 }
 
 getUser(seho);
-getUser(capt);
+getUser(captain);
 
 // 함수의 스펙(구조)에 인터페이스를 활용
 interface sumFunction {
@@ -38,21 +38,21 @@ interface StringArray {
     [index: number]: string;
 }
 
-var arr : StringArray= ['a','b','c'];
-arr[0] = 'c';
+var array : StringArray= ['a','b','c'];
+array[0] = 'c';
 
 //딕셔너리 패턴
 interface StringRegexDictionary {
     [key: string]: RegExp
 }
 
-var obj : StringRegexDictionary= {
+var obj1 : StringRegexDictionary= {
     // sth: /abc/,
     cssFile: /\.css$/,
     jsFile: /\.js$/,
 }
 
-console.log(obj['cssFile']);
+console.log(obj1['cssFile']);
 
 //인터페이스 확장
 

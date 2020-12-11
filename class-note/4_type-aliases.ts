@@ -13,11 +13,11 @@ var seho: Person ={
     age: 30
 }
 
-var hyesoo: PersonType = {
-    name: 'hyesoo',
+var hs: PersonType = {
+    name: 'hs',
     age: 24
 }
 
 type MyString = string;
-var str: MyString = 'lalala';
+var mystring: MyString = 'lalala';
 
