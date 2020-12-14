@@ -20,3 +20,19 @@ const shoppingItem : Dropdown<string> = {
     value: 'apple',
     title: 'apple'
 }
+
+//타입 추론 기본 3
+interface DetailedDropdown<K> extends Dropdown<K>{
+    description: string;
+    tag: K;
+}
+
+var detailedItem: DetailedDropdown<number> = {
+    value: 1,
+    title: 'lalla',
+    description: 'oh',
+    tag:3
+}
+
+// Best Common Type
+var arr = [1,2,true,'lalala',5,6,7];
