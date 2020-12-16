@@ -1,4 +1,4 @@
-import { PhoneType, PhoneNumberDictionary, Contact} from './app'
+import { PhoneType, Contact} from './app'
 
 // api
 // TODO: 아래 함수의 반환 타입을 지정해보세요.

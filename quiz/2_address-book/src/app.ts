@@ -1,4 +1,4 @@
-export interface PhoneNumberDictionary {
+interface PhoneNumberDictionary {
     [phone: string]: {
       num: number;
     };
